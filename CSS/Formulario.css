@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+header {
+    height: 8em;
+    background-color: #F6F5F0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.contenedor_logo {
+    width: 15em;
+    margin-left: 2em;
+    height: 100%;
+}
+
+.imagen_logo {
+    height: 100%;
+    height: 100%;
+}
+
+.menu_nav {
+    width: 35em;
+    height: 2em;
+    margin: auto 2em auto 0em;
+}
+
+.lista_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.lista_textos {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.lista_textos:hover {
+    color: #b0a881;
+    text-decoration: underline;
+}
+
+.formularioColor{
+    color: #b0a881;
+    ;
+}
+
+
+.title {
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+h3 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding does not affect overall width */
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+#adultInfo {
+    background: #e9e9e9;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+#calculationResult {
+    margin-top: 20px;
+    padding: 10px;
+    background: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+    color: #3c763d;
+}
+
+#savedRecords {
+    margin-top: 20px;
+}
+
+#savedRecords>div {
+    background: #f7f7f7;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

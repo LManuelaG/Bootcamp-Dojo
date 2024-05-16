@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Formulario.css">
+    <title>Formulario con descuentos y tutor para menores</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedor_logo">
+            <a href="../HTML/Inicio.html"><img class="imagen_logo" src="../IMAGES/LogoDojo.jpg"
+                    alt="Esta seccion contiene el logo del Dojo" /></a>
+        </div>
+
+        <nav class="menu_nav">
+            <ul class="lista_menu">
+                <a class="lista_textos" href="../HTML/Inicio.html">
+                    <li class="--home">Inicio</li>
+                </a>
+                <a class="lista_textos" href="">
+                    <li>Quiénes somos</li>
+                </a>
+                <a class="lista_textos" href="../HTML/Galeria.html">
+                    <li>Galería</li>
+                </a>
+                <a class="lista_textos" href="../HTML/Formulario.html">
+                    <li class="formularioColor">Formulario</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!-- Inicio del formulario con identificador myForm -->
+    <form id="myForm">
+
+        <h1 class="title">Formulario Okinawa</h1>
+        <!-- Campo para ingresar la edad, con etiqueta asociada y requerido para el envío del formulario -->
+        <label for="age">Edad:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <!-- Campo para ingresar el nombre, con etiqueta asociada -->
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Campo para ingresar el email, con etiqueta asociada y tipo email para validación básica -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Campo para ingresar el grado o cinturón, con etiqueta asociada -->
+        <label for="grade">Grado/Cinturón (Kyu):</label><br>
+        <input type="number" id="grade" name="grade"><br><br>
+
+        <!-- Menú desplegable para seleccionar el tipo de membresía, con etiqueta asociada -->
+        <label for="membership">Membresía:</label><br>
+        <select id="membership" name="membership">
+            <option value="mensual">Mensual ($25)</option> <!-- Opción de membresía mensual -->
+            <option value="anual">Anual ($250)</option> <!-- Opción de membresía anual -->
+        </select><br><br>
+
+        <!-- Casilla de verificación para la compra de indumentaria -->
+        <label for="apparel">¿Comprará indumentaria en el dojo?</label><br>
+        <input type="checkbox" id="apparel" name="apparel"><br><br>
+
+        <!-- Casilla de verificación para determinar si ha sido alumno anteriormente -->
+        <label for="previousStudent">¿Ha sido alumno anteriormente?</label><br>
+        <input type="checkbox" id="previousStudent" name="previousStudent"><br><br>
+
+        <!-- Casilla de verificación para determinar si el pago es en efectivo -->
+        <label for="cashPayment">¿Pago en efectivo?</label><br>
+        <input type="checkbox" id="cashPayment" name="cashPayment"><br><br>
+
+        <!-- Sección oculta que se mostrará si el usuario es menor de edad, para ingresar datos del adulto responsable -->
+        <div id="adultInfo" style="display:none;">
+            <h3>Información de Adulto Responsable</h3>
+            <label for="adultName">Nombre del Adulto:</label><br>
+            <input type="text" id="adultName" name="adultName"><br><br>
+
+            <label for="adultEmail">Email del Adulto:</label><br>
+            <input type="email" id="adultEmail" name="adultEmail"><br><br>
+
+            <label for="adultPhone">Teléfono del Adulto:</label><br>
+            <input type="text" id="adultPhone" name="adultPhone"><br><br>
+        </div>
+
+        <!-- Botón para enviar el formulario -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Contenedores donde se mostrarán los resultados del cálculo y los registros guardados -->
+    <div id="calculationResult"></div>
+    <div id="savedRecords"></div>
+
+    <!-- Referencia al archivo JavaScript que proporcionará la interactividad del formulario -->
+    <script src="../JavaScript/Formulario.js"></script>
+</body>
+
+</html>
